@@ -1,0 +1,22 @@
+{
+  "name": "sistema/visitas-tecnicas",
+  "description": "Sistema de gestión de visitas técnicas",
+  "type": "project",
+  "require": {
+    "php": ">=8.0",
+    "firebase/php-jwt": "^6.0",
+    "phpmailer/phpmailer": "^7.0",
+    "dompdf/dompdf": "^3.1",
+    "vlucas/phpdotenv": "^5.5"
+  },
+  "autoload": {
+    "files": [
+      "config/database.php",
+      "config/jwt.php",
+      "includes/functions.php",
+      "includes/auth.php",
+      "includes/permissions.php",
+      "includes/mail.php"
+    ]
+  }
+}

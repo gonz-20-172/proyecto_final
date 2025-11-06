@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporte de Visita Técnica</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f4f4f4;">
+    <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #f4f4f4; padding: 20px;">
+        <tr>
+            <td align="center">
+                <table width="600" cellpadding="0" cellspacing="0" border="0" style="background-color: #ffffff; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                    <tr>
+                        <td style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 40px 20px; text-align: center;">
+                            <h1 style="color: #ffffff; margin: 0; font-size: 28px;">
+                                📋 Reporte de Visita Técnica
+                            </h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="padding: 40px 30px;">
+                            <p style="font-size: 16px; color: #333333; line-height: 1.6; margin-bottom: 20px;">
+                                Estimado/a <strong>{CLIENT_NAME}</strong>,
+                            </p>
+                            
+                            <p style="font-size: 14px; color: #666666; line-height: 1.6; margin-bottom: 30px;">
+                                Le informamos que la visita técnica ha sido completada exitosamente. 
+                                Adjuntamos el reporte detallado en formato PDF.
+                            </p>
+
+                            <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #f8f9fa; border-left: 4px solid #667eea; margin-bottom: 30px;">
+                                <tr>
+                                    <td style="padding: 20px;">
+                                        <table width="100%" cellpadding="5" cellspacing="0" border="0">
+                                            <tr>
+                                                <td style="font-weight: bold; color: #333333; width: 40%;">Técnico:</td>
+                                                <td style="color: #666666;">{TECHNICIAN_NAME}</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold; color: #333333;">Fecha:</td>
+                                                <td style="color: #666666;">{VISIT_DATE}</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold; color: #333333;">Hora de Ingreso:</td>
+                                                <td style="color: #666666;">{INGRESO_TIME}</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold; color: #333333;">Hora de Egreso:</td>
+                                                <td style="color: #666666;">{EGRESO_TIME}</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold; color: #333333;">Duración:</td>
+                                                <td style="color: #666666;">{DURATION}</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #fff8dc; border-left: 4px solid #ffc107; margin-bottom: 30px;">
+                                <tr>
+                                    <td style="padding: 15px;">
+                                        <p style="margin: 0; font-size: 14px; color: #333333;">
+                                            <strong>Observaciones:</strong><br>
+                                            {NOTES}
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <p style="font-size: 14px; color: #666666; line-height: 1.6; margin-bottom: 10px;">
+                                Si tiene alguna consulta o requiere información adicional, 
+                                no dude en contactarnos.
+                            </p>
+
+                            <p style="font-size: 14px; color: #666666; line-height: 1.6;">
+                                Saludos cordiales,<br>
+                                <strong>Equipo Técnico</strong>
+                            </p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="background-color: #f8f9fa; padding: 20px; text-align: center; border-top: 1px solid #dee2e6;">
+                            <p style="margin: 0; font-size: 12px; color: #999999;">
+                                Este es un correo automático, por favor no responder.<br>
+                                Sistema de Visitas Técnicas &copy; {CURRENT_YEAR}
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
